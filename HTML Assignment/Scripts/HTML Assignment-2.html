@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tags with CSS</title>
+  <link rel="stylesheet" href="../Styles/Assignment2.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    #main_title {
+    color: darkgreen;
+    }
+
+    #geo_image {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- Heading tags -->
+<h1 id="main_title">Geography Information</h1>
+
+<h2 id="section2">Section 1: Physical Geography</h2>
+
+<h3 id="overview_heading" style="color:blue;font-family:verdana;text-align:center">
+  World Geography Overview
+</h3>
+
+<h5 id="description_heading">
+  Geography helps us understand landforms, climate, and human activities.
+</h5>
+
+<h6 id="small_heading">Basic Geography Concepts</h6>
+
+<hr>
+
+
+
+<!-- Image -->
+<div class="section">
+  <h2>Geographical Image</h2>
+  <img id="geo_image" src="../Images/geography.jpg" alt="Geography Icon" width="300" height="200">
+</div>
+
+<hr>
+
+<!-- Paragraphs -->
+<div class="section">
+  <h2>Geography Paragraphs</h2>
+
+  <p id="para_intro">
+    Geography is the study of Earth’s surface, climate systems, and human settlements.
+  </p>
+
+  <p id="para_break">
+    Line break example <br>
+    geography explains physical and human interactions.
+  </p>
+</div>
+
+<hr>
+
+<div class="section">
+  <h2>Geography Text Formatting</h2>
+
+  <p id="para_format">
+    Geography studies <b>landforms</b> and <strong>natural resources</strong>.
+    <em>Climate change</em> and <i>weather patterns</i> are important.
+    <small>Map scales</small> help measure distance.
+    H<sub>2</sub>O and altitude 2<sup>3</sup>.
+    <del>Flat Earth</del> <ins>Spherical Earth</ins>.
+    <mark>Important facts</mark>.
+  </p>
+</div>
+
+<hr>
+
+<!-- Lists -->
+<div class="section">
+    
+    <h1 style="display: block;">Unordered Lists</h1>
+    <div style="display: flex;flex-wrap: wrap; gap: 40px;">
+        <div>
+            <h3>Continents</h3>
+            <ul id="ul_continents">
+                <li>Asia</li>
+                <li>Africa</li>
+                <li>Europe</li>
+                <li>North America</li>
+                <li>South America</li>
+                <li>Australia</li>
+                <li>Antarctica</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Major Oceans</h3>
+            <ol id="ol_oceans">
+                <li>Pacific Ocean</li>
+                <li>Atlantic Ocean</li>
+                <li>Indian Ocean</li>
+                <li>Southern Ocean</li>
+                <li>Arctic Ocean</li>
+            </ol>
+        </div>
+    </div>
+    <h1 style="display: block;text-align: center;">Ordered Lists</h1>
+  <div style="display:flex;flex-wrap: wrap;gap:15px;justify-content: space-evenly;">
+    
+    <div style="border: 2px solid black;padding: 15px;">
+        <h3>Ordered Lists 1(simple list)</h3>
+        <ol>
+            <li>Pacific Ocean</li>
+            <li>Atlantic Ocean</li>
+            <li>Indian Ocean</li>
+            <li>Southern Ocean </li>
+            <li>Arctic Ocean</li>
+        </ol>
+    </div>
+    <div style="border: 2px solid black;padding: 15px">
+        <h3>Ordered Lists 2(using start)</h3>
+        <ol start="4">
+            <li>Pacific Ocean</li>
+            <li>Atlantic Ocean</li>
+            <li>Indian Ocean</li>
+            <li>Southern Ocean </li>
+            <li>Arctic Ocean</li>
+        </ol>
+    </div>
+    <div style="border: 2px solid black;padding: 15px">
+        <h3>Ordered Lists 3(using type)</h3>
+        <ol type="i">
+            <li>Pacific Ocean</li>
+            <li>Atlantic Ocean</li>
+            <li>Indian Ocean</li>
+            <li>Southern Ocean </li>
+            <li>Arctic Ocean</li>
+        </ol>
+    </div>
+    <div style="border: 2px solid black;padding: 15px">
+        <h3>Ordered Lists 4(using type)</h3>
+        <ol type="A">
+            <li>Pacific Ocean</li>
+            <li>Atlantic Ocean</li>
+            <li>Indian Ocean</li>
+            <li>Southern Ocean </li>
+            <li>Arctic Ocean</li>
+        </ol>
+    </div>
+   </div>
+</div>
+<hr>
+</div>
+
+
+<!-- Table -->
+ <h1 style="text-align: center;">Geography Marks Table</h1>
+<div class="section" style="display:flex;align-items: center;justify-content: center;">
+
+  
+
+  <table id="geo_table" border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th rowspan="2">Student</th>
+        <th colspan="3">Scores</th>
+      </tr>
+      <tr>
+        <th>Physical</th>
+        <th>Human</th>
+        <th>Environmental</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rahul</td>
+            <td>78</td>
+            <td>85</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Ananya</td>
+            <td>88</td>
+            <td>90</td>
+            <td>92</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<!-- Form -->
+<div class="section">
+  <h1>Geography Survey Form</h1>
+
+  <form id="geo_form">
+    <label>Name:</label>
+    <input type="text"><br><br>
+
+    <label>Email:</label>
+    <input type="email"><br><br>
+
+    <label>Date:</label>
+    <input type="date"><br><br>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<hr>
+
+<!-- Video -->
+<div class="section center">
+  <h1>Geography Video</h1>
+
+  <video id="geo_video" width="600" controls>
+    <source src="/Day1/Images/48873-457671829_medium.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+</div>
+
+<hr>
+<h1>Clickable Areas</h1>
+<p>Click on the map to get state map</p>
+
+<img src="../Images/india.jpg" alt="India" usemap="#indiamap">
+
+<map name="indiamap">
+  
+    <area shape="poly" coords="191,349,174,372,171,388,168,406,176,414,198,411,215,397,238,391,225,371,209,354" alt="Telangana"
+    href="../Images/telangana.jpg"
+    target="_self">
+    <area shape="poly" coords="174,416,198,411,233,394,245,382,264,372,274,362,292,368,277,380,259,398,248,409,232,423,219,434,219,454,208,467,187,466,173,454,154,437" alt="Andhra Pradesh"
+    href="../Images/ap.jpg"
+    target="_self">
+    <area shape="poly" coords="153,494,162,493,173,488,174,476,185,477,193,469,202,469,215,465,219,476,214,486,210,495,211,502,212,514,207,520,200,525,197,537,185,539,181,549,174,554,165,557,164,543,163,531,164,520,156,514,151,503" alt="Tamil Nadu"
+    href="../Images/tamilnadu.jpg"
+    target="_self">
+    <area shape="poly" coords="254,368,247,376,258,374,266,369,274,362,284,357,291,359,303,353,311,344,324,339,333,328,334,313,345,308,327,299,315,301,302,302,289,298,277,308,273,321,264,322,258,334,264,344,255,345,256,356" alt="Odisha"
+    href="../Images/odisha.jpg"
+    target="_self">
+    <area shape="poly" coords="96,419,102,420,108,423,108,432,98,426" alt="Goa"
+    href="../Images/goa.png"
+    target="_self">
+</map>
+<hr>
+<h1 style="font-family:Georgia, serif;text-align: center;">Book Navigation</h1>
+<div id="book">
+<div id="page1" style="height:500px;">
+    Page 1
+    <div style="height:450px"></div>
+    <div style="display: flex;align-items: end;justify-content: end;">
+        <a href="#page2">Next</a>
+    </div>
+   
+</div>
+<div id="page2" style="height:500px;">
+  Page 2
+  <p style="font-size: 20px;">
+    Introduction
+    If you come across any special trait of meanness or stupidity . . . you must be
+    careful not to let it annoy or distress you, but to look upon it merely as an
+    addition to your knowledge—a new fact to be considered in studying the
+    character of humanity. Your attitude towards it will be that of the
+    mineralogist who stumbles upon a very characteristic specimen of a mineral.
+    —Arthur Schopenhauer
+    Throughout the course of our lives, we inevitably have to deal with a variety of individuals who stir up trouble and make our lives difficult and
+    unpleasant. Some of these individuals are leaders or bosses, some are colleagues,
+    and some are friends. They can be aggressive or passive-aggressive, but they are
+    generally masters at playing on our emotions. They often appear charming and
+    refreshingly confident, brimming with ideas and enthusiasm, and we fall under
+    their spell. Only when it is too late do we discover that their confidence is irrational and their ideas ill-conceived. Among colleagues, they can be those
+   
+
+  </p>
+  <center><a href="#page1">Previous</a> &nbsp; <a href="#page3">Next</a></center>
+</div>
+
+<div id="page3" style="height:500px;">
+  Page 3
+  <p style="font-size: 20px;">
+    Or they could be colleagues or hires who reveal, to our dismay, that they are
+    completely out for themselves, using us as stepping-stones.
+    What inevitably happens in these situations is that we are caught off guard,
+    not expecting such behavior. Often these types will hit us with elaborate cover
+    stories to justify their actions, or blame handy scapegoats. They know how to
+    confuse us and draw us into a drama they control. We might protest or become
+    angry, but in the end we feel rather helpless—the damage is done. Then another such type enters our life, and the same story repeats itself.
+    We often notice a similar sensation of confusion and helplessness when it
+    comes to ourselves and our own behavior. For instance, we suddenly say something that offends our boss or colleague or friend—we are not quite sure where
+    it came from, but we are frustrated to find that some anger and tension from
+    within has leaked out in a way that we regret. 
+
+  </p>
+  <center><a href="#page2">Previous</a>&nbsp;<a href="#page4">Next</a></center>
+</div>
+<div id="page4" style="height:500px;">
+  Page 4
+  <p style="font-size: 20px;">
+    What we can say about these two things—people’s ugly actions and our
+    own occasionally surprising behavior—is that we usually have no clue as to
+    what causes them. We might latch onto some simple explanations: “That person is evil, a sociopath” or “Something came over me; I wasn’t myself.” But
+    such pat descriptions do not lead to any understanding or prevent the same patterns from recurring. The truth is that we humans live on the surface, reacting
+    emotionally to what people say and do. We form opinions of others and ourselves that are rather simplified. We settle for the easiest and most convenient
+    story to tell ourselves.
+    What if, however, we could dive below the surface and see deep within,
+    getting closer to the actual roots of what causes human behavior? What if we
+    could understand why some people turn envious and try to sabotage our work,
+    or why their misplaced confidence causes them to imagine themselves as godlike and infallible? What if we could truly fathom why people suddenly behave
+    
+
+  </p>
+  <center><a href="#page3">Previous</a>&nbsp;<a href="#page5">Next</a></center>
+</div>
+<div id="page5" style="height:500px;">
+  Page 5
+  <p style="font-size: 20px;">
+    If we really understood the roots of human behavior, it would be much
+    harder for the more destructive types to continually get away with their actions.
+    We would not be so easily charmed and misled. We would be able to anticipate
+    their nasty and manipulative maneuvers and see through their cover stories. We
+    would not allow ourselves to get dragged into their dramas, knowing in advance that our interest is what they depend on for their control. We would finally rob them of their power through our ability to look into the depths of their
+    character.
+    Similarly, with ourselves, what if we could look within and see the source
+    of our more troubling emotions and why they drive our behavior, often against 
+    our own wishes? What if we could understand why we are so compelled to
+    desire what other people have, or to identify so strongly with a group that we
+    feel contempt for those who are on the outside? What if we could find out what
+    
+
+  </p>
+  <br>
+  <center><a href="#page4">Previous</a></center>
+</div>
+</div>
+<!-- Links -->
+<div class="section">
+  <h2>Geography Reference Links</h2>
+
+  <a id="a_google" href="https://www.google.com">World Map Search</a><br>
+  <a id="a_blank" href="https://www.w3schools.com" target="_blank">Learning Resources (New Tab)</a><br>
+  <a id="a_self" href="https://www.w3schools.com" target="_self">Resources (Same Tab)</a><br>
+  <a id="a_parent" href="https://www.w3schools.com" target="_parent">Resources (Parent)</a><br>
+  <a id="a_top" href="https://www.w3schools.com" target="_top">Resources (Top)</a><br>
+
+  <a id="a_section" href="#section2">Go to Physical Geography Section</a>
+</div>
+</body>
+</html>
