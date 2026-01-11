@@ -1,7 +1,6 @@
 let customers = [];
 let customerId = 1;
 
-// Base Premiums
 const premiums = {
     healthInsurance: 3000,
     lifeInsurance: 5000,
@@ -16,7 +15,6 @@ const insurancePlans = [
     { id: 4, name: "Home Insurance", description: "Secure your property", basePremium: 4000, coverageAmount: 800000, image: "../images/home.png" }
 ];
 
-// Initialize UI
 document.addEventListener("DOMContentLoaded", () => {
     renderPlans();
     updateDashboard();
@@ -59,7 +57,6 @@ function addData() {
     const typeInput = document.getElementById("policyType");
     const coverageInput = document.getElementById("coverageamount");
 
-    // This is called by form submission; validation is handled in setupEventListeners
     const customer = {
         id: customerId++,
         name: nameInput.value.trim(),
@@ -71,7 +68,7 @@ function addData() {
     };
 
     customers.push(customer);
-    applyFilterAndSearch(); // Refreshes table with current filters
+    applyFilterAndSearch(); 
     updateDashboard();
 }
 
@@ -130,40 +127,30 @@ function setupEventListeners() {
     const coverageSlider = document.getElementById("coverageamount");
     const coverageDisplay = document.getElementById("coverageValue");
 
-    // Live Slider Update
     coverageSlider.addEventListener("input", () => {
         coverageDisplay.textContent = parseInt(coverageSlider.value).toLocaleString();
     });
 
-    // Search and Filter
     document.getElementById("searchName").addEventListener("input", applyFilterAndSearch);
     document.getElementById("filterByPolicyType").addEventListener("change", applyFilterAndSearch);
 
-    // Form Submit Validation
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        
-        // Grab values
         const fullname = document.getElementById("fullname");
         const age = document.getElementById("age");
         const email = document.getElementById("email");
         const policyType = document.getElementById("policyType");
         
         let isValid = true;
-
-        // Helper to show errors
         const setError = (element, message) => {
             const errorElement = element.closest(".form-group").querySelector(".error");
             errorElement.textContent = message;
             isValid = false;
         };
-
-        // Helper to clear errors
         const clearError = (element) => {
             element.closest(".form-group").querySelector(".error").textContent = "";
         };
 
-        // Validation Rules
         if (fullname.value.trim() === "") setError(fullname, "Name is required");
         else clearError(fullname);
 
@@ -177,11 +164,9 @@ function setupEventListeners() {
         if (policyType.value === "") setError(policyType, "Please select a policy type");
         else clearError(policyType);
 
-        // If all fields pass, add the data
         if (isValid) {
             addData();
             
-            // Success Feedback
             const successMsg = document.getElementById("successMessage");
             successMsg.textContent = "Successfully Submitted!";
             successMsg.style.display = "block";
