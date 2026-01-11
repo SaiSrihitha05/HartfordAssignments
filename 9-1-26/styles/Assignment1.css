@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+body {
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+}
+
+.title{
+    margin-top:50px;
+    text-align: center;
+}
+.para{
+    width: 48%;
+    margin: auto;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.container{
+    max-width: 50%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #bebebe;
+    border-radius: 2%;
+    box-shadow: 2px 2px 12px #aaa;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+label{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    
+}
+input{
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #aaaaaa10;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+button{
+    background-color: rgb(58, 58, 192);
+    border: none;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    width: 40%;
+
+}
+button:hover{
+    background-color: rgb(7, 7, 167);
+    cursor: pointer;
+}
+#experience input{
+    width: auto;
+    display: inline;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#experience label{
+    display: block;
+    width: auto;
+}
+.labelName{
+    font-weight: bold;
+}
+#requestType,#policyType,textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #aaaaaa10;
+}
+
+#experience input[type="radio"] {
+    display: none;
+    position: relative;
+}
+
+.labelName {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.radio {
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.radio input + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  line-height: 18px;
+}
+
+.radio input + span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.radio input + span::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3.5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #222;
+  opacity: 0;
+}
+.radio input:checked + span::after {
+  opacity: 1;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+}
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .para {
+    width: 90%;
+  }
+
+  button {
+    width: 70%;
+  }
+}

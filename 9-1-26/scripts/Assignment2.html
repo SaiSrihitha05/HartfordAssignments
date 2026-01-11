@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Dashboard</title>
+    <link rel="stylesheet" href="../styles/Assignment2.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F5F2EF]">
+    <div class="header sticky top-0 z-[100] flex flex-col p-4">
+        <div class="logo ml-10">
+            <img src="../Images/horizontal_logo.png" alt="" class="w-32">
+        </div>
+        <div class="tagline ml-11 text-[13px] font-semibold text-[#75013F]">
+            <p>We're Ready to Do Right By You</p>
+        </div>
+    </div>
+
+    <div class="hero flex flex-col lg:flex-row items-center justify-evenly min-h-screen gap-10 px-10" id="home">
+        <div class="left-section max-w-2xl">
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6">Protecting Your<br> <span class="text-[#75013F]">Life</span> & <span class="text-[#75013F]">Future</span></h1>
+            <p class="text-xl leading-relaxed text-justify mb-8">The Hartford is a trusted leader in property and casualty insurance, group benefits, and mutual funds. We are widely recognized for our commitment to customer service excellence, sustainability, trust, and integrity.</p>
+            <button class="hero-btn"><a href="#plans">View Plans</a></button>
+        </div>
+        <div class="stats-section py-20">
+            <h2 class="stats_heading text-3xl font-bold text-center mb-10">Statistics</h2>
+            <div class="flex flex-col gap-8">
+                <div class="stat-card"><div class="stat-card-info"><div class="stat-title">1M Customers</div></div></div>
+                <div class="stat-card"><div class="stat-card-info"><div class="stat-title">500 Policies</div></div></div>
+                <div class="stat-card"><div class="stat-card-info"><div class="stat-title">98 Claims</div></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plans_sec px-10">
+        <h2 class="text-4xl font-bold text-center my-12">Our Insurance <span class="text-[#75013F]">Plans</span></h2>
+        <div id="plans" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20"></div>
+    </div>
+
+    <div class="enquiryFormSection">
+        <h2 class="text-4xl font-bold text-center mb-8"><span class="text-[#75013F]">Enquiry</span> Form</h2>
+        <div class="container max-w-[90%] md:max-w-[70%] lg:max-w-[50%] mx-auto p-8 rounded-xl shadow-lg mb-12">
+            <form id="enquiryForm">
+                <div class="form-group mb-4">
+                    <label class="font-bold mb-2">Full Name</label>
+                    <input type="text" id="fullname" class="custom-input">
+                    <small class="error text-red-600 text-xs"></small>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="font-bold mb-2">Age</label>
+                    <input type="number" id="age" class="custom-input">
+                    <small class="error text-red-600 text-xs"></small>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="font-bold mb-2">Email</label>
+                    <input type="email" id="email" class="custom-input">
+                    <small class="error text-red-600 text-xs"></small>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="font-bold mb-2">Policy Type</label>
+                    <select id="policyType" class="custom-input">
+                        <option value="">-- Select --</option>
+                        <option value="healthInsurance">Health Insurance</option>
+                        <option value="lifeInsurance">Life Insurance</option>
+                        <option value="autoInsurance">Auto Insurance</option>
+                        <option value="homeInsurance">Home Insurance</option>
+                    </select>
+                    <small class="error text-red-600 text-xs"></small>
+                </div>
+                <div class="form-group mb-6">
+                    <label class="font-bold mb-2">Coverage Amount</label>
+                    <input type="range" id="coverageamount" min="0" max="10000000" step="10000" value="3000" class="w-full">
+                    <p class="text-center font-semibold mt-2">Coverage: ₹<span id="coverageValue">0</span></p>
+                    <small class="error text-red-600 text-xs"></small>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <p id="successMessage" class="text-green-600 text-center mt-4 hidden"></p>
+        </div>
+    </div>
+
+    <h1 class="text-4xl font-bold text-center mb-8">Customer List Table</h1>
+    <div class="filterSearchBar flex flex-col md:flex-row justify-between gap-8 max-w-[90%] mx-auto mb-10">
+        <section class="searchSection flex-2 relative">
+            <h5 class="font-semibold mb-2">Search</h5>
+            <input type="text" id="searchName" class="custom-input pl-10" >
+        </section>
+        <section class="filterByType flex-1">
+            <h5 class="font-semibold mb-2">Filter by Type</h5>
+            <select id="filterByPolicyType" class="custom-input">
+                <option value="">-- All --</option>
+                <option value="healthInsurance">Health Insurance</option>
+                <option value="lifeInsurance">Life Insurance</option>
+                <option value="autoInsurance">Auto Insurance</option>
+                <option value="homeInsurance">Home Insurance</option>
+            </select>
+        </section>
+    </div>
+
+    <div class="overflow-x-auto px-10 mb-20">
+        <table id="tablefromform" class="w-full border-collapse bg-white">
+            <thead class="bg-[#75013F] text-white">
+                <tr>
+                    <th class="p-3 border">Id</th>
+                    <th class="p-3 border">Name</th>
+                    <th class="p-3 border">Age</th>
+                    <th class="p-3 border">Email</th>
+                    <th class="p-3 border">Policy Type</th>
+                    <th class="p-3 border">Coverage</th>
+                    <th class="p-3 border">Premium</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <section class="dashboard pb-20 px-10">
+    <h1 class="text-4xl font-bold text-center mb-10">Dashboard Summary</h1>
+    <div id="dashboardCards" class="dashboard-wrapper"></div>
+</section>
+
+    <script src="./Assignment2.js"></script>
+</body>
+</html>

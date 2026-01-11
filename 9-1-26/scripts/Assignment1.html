@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Insurance Enquiry & Feedback</title>
+    <link rel="stylesheet" href="../styles/Assignment1.css">
+</head>
+<body>
+    <h1 class="title">Insurance Enquiry & Feedback</h1>
+    <p class="para">Provides customers with a simple way to ask questions about insurance plans, premiums, coverage, and claims, and to share their experiences or suggestions. It helps insurers understand customer needs, resolve issues quickly, and continuously improve services by acting on feedback received.</p>
+    <div class="container">
+        <form class="enquiryForm" id="enquiryForm">
+
+  <div class="form-group">
+    <label class="labelName">Full Name</label>
+    <input type="text" id="fullname">
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group">
+    <label class="labelName">Email</label>
+    <input type="email" id="email">
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group">
+    <label class="labelName">Mobile Number</label>
+    <input type="tel" id="mobilenumber">
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group">
+    <label class="labelName">Request Type</label>
+    <select id="requestType">
+      <option value="">-- Select --</option>
+      <option value="policyEnquiry">Policy Enquiry</option>
+      <option value="ClaimRelated">Claim Related</option>
+      <option value="Feedback">Feedback</option>
+    </select>
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group">
+    <label class="labelName">Policy Type</label>
+    <select id="policyType">
+      <option value="">-- Select --</option>
+      <option value="healthInsurance">Health Insurance</option>
+      <option value="lifeInsurance">Life Insurance</option>
+      <option value="autoInsurance">Auto Insurance</option>
+      <option value="homeInsurance">Home Insurance</option>
+    </select>
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group">
+    <label class="labelName">Message</label>
+    <textarea id="message"></textarea>
+    <small class="error"></small>
+  </div>
+
+  <div class="form-group" id="experience">
+    <label class="labelName">Experience Rating</label>
+
+    <label class="radio"><input type="radio" name="experienceRating" value="1"><span>1</span></label>
+    <label class="radio"><input type="radio" name="experienceRating" value="2"><span>2</span></label>
+    <label class="radio"><input type="radio" name="experienceRating" value="3"><span>3</span></label>
+    <label class="radio"><input type="radio" name="experienceRating" value="4"><span>4</span></label>
+    <label class="radio"><input type="radio" name="experienceRating" value="5"><span>5</span></label>
+
+    <small class="error"></small>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+<p id="successMessage" class="success"></p>
+
+    </div>
+<script src="./Assignment1.js"></script>
+
+</body>
+</html>
