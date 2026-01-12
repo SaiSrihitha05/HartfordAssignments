@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Insurance Events</title>
+  <style>
+    .claim-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .approve-btn {
+      background-color: #22c55e;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Exercise 1: Bubbling -->
+<div id="paymentSection" style="background-color:aqua;">
+  <h1>Premium</h1>
+  <button id="payPremium">Pay Premium</button>
+</div>
+
+<!-- Exercise 2: Capturing -->
+<div id="paymentSection1" style="background-color:aquamarine;">
+  <h1>Premium</h1>
+  <button id="payPremium1">Pay Premium</button>
+</div>
+
+<!-- Exercise 3: stopPropagation -->
+<div class="policy-card">
+  <h3 class="policy-name">Health Insurance Policy</h3>
+  <button class="delete-policy">Delete Policy</button>
+</div>
+
+<div class="policy-card">
+  <h3 class="policy-name">Life Insurance Policy</h3>
+  <button class="delete-policy">Delete Policy</button>
+</div>
+
+<!-- Exercise 4 -->
+<h2>Insurance Claims</h2>
+
+<div class="claim-row">
+  <span class="claim-details">Claim #101 - Health Insurance</span>
+  <button class="approve-btn">Approve Claim</button>
+</div>
+
+<div class="claim-row">
+  <span class="claim-details">Claim #102 - Vehicle Insurance</span>
+  <button class="approve-btn">Approve Claim</button>
+</div>
+
+<div class="claim-row">
+  <span class="claim-details">Claim #103 - Life Insurance</span>
+  <button class="approve-btn">Approve Claim</button>
+</div>
+
+<script src="./js_assignment2.js"></script>
+</body>
+</html>
