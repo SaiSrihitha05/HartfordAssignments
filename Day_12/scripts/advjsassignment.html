@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                font-family: Arial, sans-serif;
+            }
+
+            th, td {
+                border: 1px solid #333;
+                padding: 10px;
+                text-align: center;
+            }
+
+    </style>
+</head>
+<body>
+    <button id="fetch">fetch policies</button>
+    <select name="policyType" id="policy-type">
+        <option value=''>--Select--</option>
+        <option value="Health">Health</option>
+        <option value="Life">Life</option>
+        <option value="Vehicle">Vehicle</option>
+    </select>
+    <button onclick="clearFil()">Clear Filter</button>
+    <table>
+        <thead>
+            <!-- Policy Name, Type, Premium, DuraƟon, Status -->
+            <tr>
+                <th>Policy Name</th>
+                <th>Type</th>
+                <th>Premium</th>
+                <th>Duration</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+            
+        </tbody>
+    </table>
+    <p id="totalPre">Total Premium(Status:Active): </p>
+    <table>
+        <thead>
+            <h3>Table with updated premiums</h3>
+            <tr>
+                <th>Policy Name</th>
+                <th>Type</th>
+                <th>Premium</th>
+                <th>Duration</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="table_body1">
+            
+        </tbody>
+    </table>
+    <script src="./advjsassignment.js"></script>
+</body>
+</html>
