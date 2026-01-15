@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Policies</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+    body { font-family: 'Lato', sans-serif; }
+
+    .custom-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .submit-btn {
+      background-color: #75013F;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .Active { 
+      color: green; 
+      font-weight: bold; 
+    }
+    .Inactive { 
+      color: red; 
+      font-weight: bold; 
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="sticky top-0 bg-white shadow p-4">
+      <img src="../Images/horizontal_logo.png" class="w-32 ml-10">
+      <p class="ml-11 text-sm font-semibold text-[#75013F]">We're Ready to Do Right By You</p>
+    </div>
+
+    <div class="enquiryFormSection mt-10">
+      <h2 class="text-4xl font-bold text-center mb-8">
+        <span class="text-[#75013F]">Policy</span> Form
+      </h2>
+
+      <div class="max-w-[50%] mx-auto p-8 rounded-xl shadow-md mb-12">
+        <form id="policyForm">
+
+          <div class="mb-5">
+            <label class="font-bold ">Policy Name</label>
+            <input id="name" class="custom-input mt-4" required />
+          </div>
+
+          <div class="mb-4">
+            <label class="font-bold">Policy Type</label>
+            <select id="type" class="custom-input mt-4" required>
+              <option value="">-- Select --</option>
+              <option value="Life">Life</option>
+              <option value="Health">Health</option>
+              <option value="Vehicle">Vehicle</option>
+              <option value="Home">Home</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label class="font-bold">Premium</label>
+            <input type="number" id="premium" class="custom-input mt-4" required />
+          </div>
+
+          <div class="mb-4">
+            <label class="font-bold">Duration (Years)</label>
+            <input type="number" id="duration" class="custom-input mt-4" required />
+          </div>
+
+          <div class="mb-6">
+            <label class="font-bold">Status</label>
+            <select id="status" class="custom-input mt-4" required>
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+          </div>
+
+          <button class="submit-btn cursor-pointer">Add Policy</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="max-w-[90%] mx-auto mb-16">
+      <table class="w-full border-collapse">
+        <thead class="bg-[#75013F] text-white">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Premium</th>
+            <th>Duration</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="policyTable"></tbody>
+      </table>
+    </div>
+
+    <script src="./restapi.js"></script>
+</body>
+</html>

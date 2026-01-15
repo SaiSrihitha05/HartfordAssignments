@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Task 2 */
+        .msg {
+        /* color blue; : is not present */
+        color:blue;
+        font-size: 20px;
+        }
+        /* TASK 6: CSS Layout Breaking
+        Buggy Code:
+        .card {
+        width: 300; -> add units  
+        padding: 20px;
+        }  */
+        .card {
+        width: 300px;
+        padding: 20px;
+        background-color: black;
+        }
+        /* TASK 8: Hidden Element SƟll Taking Space (CSS)
+        Buggy Code:
+        .alert {
+        visibility: hidden;} */
+        /* .alert {
+        hidden:true;
+        } */
+        .alert{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- TASK 1: Form Not Submitting (HTML + JS)
+    Buggy Code: -->
+    <form id="userForm">
+        <input type="text" id="username">
+        <button type="submit">Submit</button>
+    </form>
+    <!-- TASK 2: CSS Not Applying 
+    Buggy Code: -->
+    <p class="msg">Hello User</p>
+    <!-- TASK 3: Button Click Not Working (JS + DOM) -->
+    <button id="btn">Click Me</button>
+    <!-- Task 5 -->
+    <input type="email" id="email">
+    <button onclick="check()">Check</button>
+    <!-- Task 6 -->
+     <div class="card"></div>
+    <!-- Task 8 -->
+    <div class="alert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum.</div>
+
+    <!-- TASK 10: Checkbox ValidaƟon
+    Buggy Code:
+    <input type="checkbox" id="terms">
+    <button onclick="submitForm()">Submit</button> -->
+    <input type="checkbox" id="terms">
+    <button onclick="submitForm()">Submit</button>
+
+    <!-- TASK 11: Assignment instead of comparison
+    Buggy Code: -->
+    <input type="text" id="mobile" />
+    <button onclick="validate()">Submit</button>
+
+    <!-- TASK 12: Policy Holder Name ValidaƟon
+    Buggy Code: -->
+    <input type="text" id="policyName">
+    <button onclick="validateName()">Submit</button>
+
+    <!-- TASK 13: Insurance Plan Dropdown ValidaƟon
+    Buggy Code: -->
+    <select id="plan">
+    <option value="Select Plan">Select Plan</option>
+    <option value="Health">Health</option>
+    <option value="Life">Life</option>
+    </select>
+    <button onclick="checkPlan()">Apply</button>
+    <script>
+        document.getElementById("userForm").addEventListener("submit", (e)=> {
+            e.preventDefault();
+            let name = document.getElementById("username").value;
+            if (name == ""){
+                alert("Name required");
+            }
+            else{
+                alert("Form submitted")
+            }
+    })
+    
+    </script>
+    <script src="./debuggingExercise.js" ></script>
+</body>
+</html>
