@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bank Operations Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../styles/BankOpsDashboard.css">
+</head>
+<body>
+    <div class="heading bg-amber-50 text-black p-3 text-center font-bold text-lg">Online Bank Operations Dashboard</div>
+
+    <h2 class="adddata text-xl font-bold text-center">Add User Data</h2>
+    <form id="userform">
+        <label>Name</label>
+        <input type="text" id="username" minlength="4" maxlength="20" required>
+        <small class="error" id="nameError"></small>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label>Address (City)</label>
+        <input type="text" id="address" required>
+        <small class="error" id="addressError"></small>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <h2 class="headingaccount text-xl font-bold text-center">Customer Accounts</h2>
+
+    <div class="divide">
+    <!-- Search -->
+    <div>
+        <label for="search">Search</label>
+        <input type="text" id="search">
+    </div>
+    <!-- Filter -->
+    <div class="filterdivide">
+        <label for="filter">Filter By City(Branch)</label>
+        <select name="filter" id="filter">
+            <option value="">--Select--</option>
+            <option value="Gwenborough">Gwenborough</option>
+            <option value="Roscoeview">Roscoeview</option>
+            <option value="South Christy">South Elvis</option>
+            <option value="Howemouth">McKenziehaven</option>
+            <option value="Aliyaview">Wisokyburgh</option>
+            <option value="Bartholomebury">koratla</option>
+            <option value="Lebsackbury">krkpaotl</option>
+        </select>
+    </div>
+    <button id="sortBalance">Sort by Balance (High → Low)</button>
+    <button id="resetSort">Reset Order</button>
+    </div>
+    <div id="loaderheading" >Loading users...</div>
+    <div id="loader" style="display:none;font-weight:bold;text-align:center;margin:20px;"></div>
+    <table class="usersTable">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>address(city)</th>
+                <th>balance</th>
+                <th>Actions</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="userTabbody">
+            
+        </tbody>
+    </table>
+
+    <h3>Total Bank Balance: </h3>
+    <p id="totalBalance"></p>
+    <h2 class="text-xl font-bold text-center mb-4">Transactions</h2>
+
+    <label for="search1">Search</label>
+    <input type="text" id="search1">
+    <div id="loader1" style="display:none;font-weight:bold;text-align:center;margin:20px;"></div>
+    <table id="transactions">
+        <thead>
+            <th>Type</th>
+            <th>amount</th>
+            <th>Date</th>
+            <th>Time</th>
+        </thead>
+        <tbody id="transactionBody">
+
+        </tbody>
+    </table>
+    <script src="./BankOpsDashboard.js"></script>
+</body>
+</html>
