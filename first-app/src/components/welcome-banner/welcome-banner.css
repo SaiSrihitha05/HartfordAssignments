@@ -1,0 +1,18 @@
+.welcome{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+img{
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+p{
+    align-items: center;
+    align-content: center;
+    font-weight: 700;
+    font-size: 50px;
+    margin-right: 50px;
+    width: 30%;
+}

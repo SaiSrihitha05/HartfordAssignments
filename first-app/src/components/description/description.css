@@ -1,0 +1,14 @@
+.desc{
+    text-align: center;
+}
+.mainheading{
+    font-weight: 700;
+    margin-top: 70px;
+    font-size: 50px;
+    color: #75013F;
+}
+.subheading{
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 18px;
+}
