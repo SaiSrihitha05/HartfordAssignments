@@ -1,0 +1,32 @@
+
+<h1>Basic CRUD</h1>
+<div>
+    <label for="username">Name</label>
+    <input type="text" [(ngModel)]="user.name">
+    <label for="email">Email</label>
+    <input type="text" [(ngModel)]="user.email">
+    <button (click)="saveUser()">{{isEdit?"Update":"Add"}}</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(i of users; track i.id){
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>
+                <button (click)="editUser(i)">Edit</button>
+                <button (click)="deleteUser(i.id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
