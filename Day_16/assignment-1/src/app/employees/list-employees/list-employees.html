@@ -1,0 +1,16 @@
+<p class="text-4xl font-semibold mb-6 text-gray-800 text-center mt-6">
+  Employee List
+</p>
+<div class="cards grid grid-cols-3 gap-8 m-10">
+@for(i of employee; track i.id){
+ <div class="card bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center">
+        <img [src]="i.photoPath" alt="" class="w-[250px] h-[250px] rounded-full object-cover border-4 border-gray-200 mb-4">
+        <p class="text-2xl font-bold p-4">{{i.name}}</p>
+        <p><span class="font-semibold text-gray-900">Gender: </span>{{i.gender}}</p>
+        <p><span class="font-semibold text-gray-900">Contact Preference: </span>{{i.contactPreference}}</p>
+        <p><span class="font-semibold text-gray-900">Email: </span>{{i.email}}</p>
+        <p><span class="font-semibold text-gray-900">Date Of Birth: </span>{{i.dateOfBirth | date:'dd MMM yyyy'}}</p>
+        <p><span class="font-semibold text-gray-900">Department: </span>{{i.department}}</p>
+    </div>
+}
+</div>
