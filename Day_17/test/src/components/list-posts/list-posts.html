@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="form-card">
+    <h3>{{ isEdit ? 'Update Post' : 'Create New Post' }}</h3>
+    <div class="input-group">
+      <label>Title</label>
+      <input type="text" [(ngModel)]="user.title" placeholder="Post title">
+    </div>
+
+    <div class="input-group">
+      <label>Description</label>
+      <input type="text" [(ngModel)]="user.description" placeholder="Post description">
+    </div>
+
+    <div class="actions">
+      <button class="btn" (click)="addUser()">
+        {{ isEdit ? 'Update Post' : 'Add Post' }}
+      </button>
+      @if (isEdit) { 
+        <button class="btn" (click)="resetForm()">Cancel</button> 
+      }
+    </div>
+  </div>
+
+  <div class="table-container">
+    @if (posts$ | async; as postsList) {
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (post of postsList; track post.id) {
+            <tr>
+              <td>{{ post.id }}</td>
+              <td><strong>{{ post.title }}</strong></td>
+              <td>{{ post.description }}</td>
+              <td>
+                <button class="btn-edit" (click)="updateUser(post)">Edit</button>
+                <button class="btn-delete" (click)="deleteUser(post.id)">Delete</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    } @else {
+      <div class="loader">
+        <div class="spinner"></div>
+        <p>Syncing with server...</p>
+      </div>
+    }
+  </div>
+
+  <div class="card">
+    <h4>Quick Look: Post #2</h4>
+    @if (singlePost$ | async; as single) {
+      <p><strong>{{ single.title }}</strong>: {{ single.description }}</p>
+    }
+  </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "JSON-Server Basics",
+      "description": "is a lightweight tool used to create mock APIs quickly. It allows developers to simulate backend behavior without building a real server. This is extremely useful during frontend development and testing. It supports CRUD operations out of the box. JSON-Server helps speed up development workflows."
+    },
+    {
+      "id": "2",
+      "title": "Working with Mock APIs",
+      "description": "Mock APIs help frontend developers work independently from backend teams. Using tools like JSON-Server, developers can define data using simple JSON files. These APIs behave like real REST services. This improves productivity and parallel development. Mock APIs are widely used in modern web projects."
+    },
+    {
+      "id": "7b91",
+      "title": "f",
+      "description": "qwe"
+    },
+    {
+      "id": "361f",
+      "title": "w",
+      "description": "fse"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+:host {
+  font-family: 'Inter', system-ui, sans-serif;
+
+}
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.form-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+button{
+    padding: 5px;
+    background-color: rgb(57, 70, 38);
+    border: none;
+    border-radius: 5%;
+    color: #e2e8f0;
+    cursor: pointer;
+
+}
+.input-group { 
+    margin-bottom: 1rem; 
+}
+.input-group label { 
+    display: block; 
+    font-weight: 500; 
+    margin-bottom: 0.4rem; 
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th { background: #f1f5f9; padding: 1rem; text-align: left; font-size: 0.875rem; }
+td { padding: 1rem; border-top: 1px solid #f1f5f9; }
+
+
+
