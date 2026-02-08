@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Requirement1/Requirement1.csproj" />
+  <Project Path="Requirement2/Requirement2.csproj" />
+  <Project Path="Requirement3/Requirement3.csproj" Id="95a0e905-39ed-49b8-92c3-4acc2403486f" />
+  <Project Path="Requirement4/Requirement4.csproj" Id="f4595feb-e86c-4249-b0a1-734a93fc7ce5" />
+  <Project Path="Requirement5/Requirement5.csproj" Id="71439537-6f8b-49fd-b124-eefcd3737d62" />
+  <Project Path="Requirement6/Requirement6.csproj" Id="265265da-87a0-4d15-9db6-3b83c1df814f" />
+</Solution>
