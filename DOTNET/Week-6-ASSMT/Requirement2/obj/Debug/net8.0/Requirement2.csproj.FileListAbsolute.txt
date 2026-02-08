@@ -1,0 +1,15 @@
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.GeneratedMSBuildEditorConfig.editorconfig
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.AssemblyInfoInputs.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.AssemblyInfo.cs
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.csproj.CoreCompileInputs.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.sourcelink.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\bin\Debug\net8.0\Requirement2.exe
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\bin\Debug\net8.0\Requirement2.deps.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\bin\Debug\net8.0\Requirement2.runtimeconfig.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\bin\Debug\net8.0\Requirement2.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\bin\Debug\net8.0\Requirement2.pdb
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\refint\Requirement2.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.pdb
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\Requirement2.genruntimeconfig.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement2\obj\Debug\net8.0\ref\Requirement2.dll
