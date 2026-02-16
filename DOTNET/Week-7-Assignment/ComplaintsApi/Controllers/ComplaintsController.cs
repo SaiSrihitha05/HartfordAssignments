@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ComplaintsApi.Models;
-using ComplaintsApi.DTOs;
 
 namespace ComplaintsApi.Controllers
 {
@@ -18,95 +22,65 @@ namespace ComplaintsApi.Controllers
 
         // GET: api/Complaints
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ComplaintResponseDto>>> GetComplaints()
+        public async Task<ActionResult<IEnumerable<Complaint>>> GetComplaints()
         {
-            var complaints = await _context.Complaints
-                .Select(c => new ComplaintResponseDto
-                {
-                    Id = c.Id,
-                    Title = c.Title,
-                    CustomerName = c.CustomerName,
-                    Status = c.Status,
-                    CreatedAt = c.CreatedAt
-                })
-                .ToListAsync();
-
-            return Ok(complaints);
+            return await _context.Complaints.ToListAsync();
         }
 
         // GET: api/Complaints/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ComplaintResponseDto>> GetComplaint(int id)
+        public async Task<ActionResult<Complaint>> GetComplaint(int id)
         {
             var complaint = await _context.Complaints.FindAsync(id);
 
             if (complaint == null)
+            {
                 return NotFound();
+            }
 
-            var response = new ComplaintResponseDto
-            {
-                Id = complaint.Id,
-                Title = complaint.Title,
-                CustomerName = complaint.CustomerName,
-                Status = complaint.Status,
-                CreatedAt = complaint.CreatedAt
-            };
-
-            return Ok(response);
-        }
-
-        // POST: api/Complaints
-        [HttpPost]
-        public async Task<ActionResult<ComplaintResponseDto>> PostComplaint(CreateComplaintDto dto)
-        {
-            var complaint = new Complaint
-            {
-                Title = dto.Title,
-                Description = dto.Description,
-                CustomerName = dto.CustomerName,
-                CustomerEmail = dto.CustomerEmail,
-                Status = "Pending",
-                CreatedAt = DateTime.UtcNow
-            };
-
-            _context.Complaints.Add(complaint);
-            await _context.SaveChangesAsync();
-
-            var response = new ComplaintResponseDto
-            {
-                Id = complaint.Id,
-                Title = complaint.Title,
-                CustomerName = complaint.CustomerName,
-                Status = complaint.Status,
-                CreatedAt = complaint.CreatedAt
-            };
-
-            return CreatedAtAction(nameof(GetComplaint),
-                new { id = complaint.Id },
-                response);
+            return complaint;
         }
 
         // PUT: api/Complaints/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutComplaint(int id, UpdateComplaintDto dto)
+        public async Task<IActionResult> PutComplaint(int id, Complaint complaint)
         {
-            var complaint = await _context.Complaints.FindAsync(id);
+            if (id != complaint.Id)
+            {
+                return BadRequest();
+            }
 
-            if (complaint == null)
-                return NotFound();
+            _context.Entry(complaint).State = EntityState.Modified;
 
-            if (!string.IsNullOrEmpty(dto.Title))
-                complaint.Title = dto.Title;
-
-            if (!string.IsNullOrEmpty(dto.Description))
-                complaint.Description = dto.Description;
-
-            if (!string.IsNullOrEmpty(dto.Status))
-                complaint.Status = dto.Status;
-
-            await _context.SaveChangesAsync();
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ComplaintExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return NoContent();
+        }
+
+        // POST: api/Complaints
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<Complaint>> PostComplaint(Complaint complaint)
+        {
+            _context.Complaints.Add(complaint);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetComplaint", new { id = complaint.Id }, complaint);
         }
 
         // DELETE: api/Complaints/5
@@ -114,14 +88,20 @@ namespace ComplaintsApi.Controllers
         public async Task<IActionResult> DeleteComplaint(int id)
         {
             var complaint = await _context.Complaints.FindAsync(id);
-
             if (complaint == null)
+            {
                 return NotFound();
+            }
 
             _context.Complaints.Remove(complaint);
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private bool ComplaintExists(int id)
+        {
+            return _context.Complaints.Any(e => e.Id == id);
         }
     }
 }
