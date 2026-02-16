@@ -1,4 +1,3 @@
-﻿
 using EFCoreSeedData.Models;
 using Microsoft.EntityFrameworkCore;
 namespace EFCoreSeedData
@@ -46,3 +45,4 @@ namespace EFCoreSeedData
         }
     }
 }
+
