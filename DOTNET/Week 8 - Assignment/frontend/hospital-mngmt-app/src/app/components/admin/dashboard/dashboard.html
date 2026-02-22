@@ -1,0 +1,24 @@
+<div class="admin-layout">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <span class="hospital-icon">🏥</span>
+      <h3>Admin Portal</h3>
+    </div>
+    
+    <nav class="sidebar-nav">
+      <a routerLink="/admin/dashboard" routerLinkActive="active" class="nav-item">
+        <span class="icon">📊</span> Dashboard
+      </a>
+      <a routerLink="/admin/user-management" routerLinkActive="active" class="nav-item">
+        <span class="icon">👥</span> Users
+      </a>
+      <a routerLink="/admin/appointment-management" routerLinkActive="active" class="nav-item">
+        <span class="icon">📅</span> Appointments
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

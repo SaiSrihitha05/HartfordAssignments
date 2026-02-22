@@ -1,0 +1,78 @@
+.doctor-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.doctor-sidebar {
+  width: 280px;
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.med-logo {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 30px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-item.active {
+  color: #3b82f6;
+  background: #0f172a;
+  border-left: 5px solid #3b82f6;
+  font-weight: 700;
+}
+
+.doctor-main {
+  flex: 1;
+  background-color: #f1f5f9;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.btn-logout {
+  width: 85%;
+  margin: 20px auto;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+  color: white;
+}

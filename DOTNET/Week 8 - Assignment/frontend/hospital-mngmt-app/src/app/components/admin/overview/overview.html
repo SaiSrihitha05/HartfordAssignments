@@ -1,0 +1,31 @@
+<div class="overview-container">
+  <header class="dashboard-header">
+    <h1 class="gradient-text">Administrator Overview</h1>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card users">
+      <div class="icon-box">👥</div>
+      <div class="details">
+        <h3>Total Users</h3>
+        <p>{{ stats.totalUsers }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card doctors">
+      <div class="icon-box">🩺</div>
+      <div class="details">
+        <h3>Active Doctors</h3>
+        <p>{{ stats.totalDoctors }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card bookings">
+      <div class="icon-box">📅</div>
+      <div class="details">
+        <h3>Total Bookings</h3>
+        <p>{{ stats.totalAppointments }}</p>
+      </div>
+    </div>
+  </div>
+</div>

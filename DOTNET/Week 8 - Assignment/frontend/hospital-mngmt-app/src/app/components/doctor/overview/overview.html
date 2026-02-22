@@ -1,0 +1,53 @@
+<div class="overview-container">
+  <header class="overview-header">
+    <h1 class="gradient-text">Doctor Dashboard</h1>
+    <p>Manage your patients and schedule efficiently.</p>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card schedule">
+      <div class="icon-wrapper">📅</div>
+      <div class="card-content">
+        <h3>Today's Slots</h3>
+        <p>{{ stats.todayAppointments }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card patients">
+      <div class="icon-wrapper">👥</div>
+      <div class="card-content">
+        <h3>Unique Patients</h3>
+        <p>{{ stats.totalPatients }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card actions">
+      <div class="icon-wrapper">⚡</div>
+      <div class="card-content">
+        <h3>Pending Tasks</h3>
+        <p>{{ stats.pendingActions }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-section">
+    <h2>Recent Appointments</h2>
+    <div class="mini-table">
+      <div class="table-row header">
+        <span>Patient</span>
+        <span>Time</span>
+        <span>Status</span>
+      </div>
+      @for(appt of appointments.slice(0, 2);track appt){
+        <div class="table-row">
+            <span class="p-name">{{ appt.patientName }}</span>
+            <span>{{ appt.appointmentDate | date: 'shortTime' }}</span>
+            <span class="status-badge" [ngClass]="appt.status.toLowerCase()">{{ appt.status }}</span>
+        </div>
+      }
+      @if(appointments.length === 0){
+        <div class="empty-msg">No appointments booked yet.</div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="overview-container">
+  <header class="header">
+    <h1 class="gradient-text">Welcome, Patient</h1>
+    <p>Manage your health records and appointments in one place.</p>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card blue">
+      <div class="card-icon">🕒</div>
+      <div class="card-info">
+        <h3>My Appointments</h3>
+        <p>{{ appointments.length }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card green" routerLink="../book-appointment">
+      <div class="card-icon">➕</div>
+      <div class="card-info">
+        <h3>New Booking</h3>
+        <p>Book Now</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="recent-appointments">
+    <h2>Recent Medical History</h2>
+    <div class="history-list">
+        @for(appt of appointments.slice(0, 3);track appt){
+            <div class="history-item">
+                <div class="item-detail">
+                <strong>Dr. {{ appt.doctorName }}</strong>
+                <span>{{ appt.appointmentDate | date: 'mediumDate' }}</span>
+                </div>
+                <span class="status-pill" [ngClass]="appt.status.toLowerCase()">{{ appt.status }}</span>
+            </div>
+        }
+        @if(appointments.length === 0){
+            <div class="empty-state">
+                No appointment history found.
+            </div>
+        }
+    </div>
+  </div>
+</div>

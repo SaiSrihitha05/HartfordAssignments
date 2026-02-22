@@ -1,0 +1,70 @@
+<div class="profile-page">
+  <div class="card">
+    
+    <header class="card-header">
+      <div>
+        <h1 class="text-primary">{{ isEditing ? 'Edit Profile' : 'Doctor Profile' }}</h1>
+        <p class="text-muted">Professional Credentials & Practice Details</p>
+      </div>
+      @if(isEditMode && !isEditing){
+        <span class="badge-success">Active Provider</span>
+      }
+    </header>
+
+    @if(!isEditing){
+      <div class="view-content">
+        <div class="info-grid">
+          <div class="info-group">
+            <label>Full Name</label>
+            <div class="value">{{ profileData.name }}</div>
+          </div>
+          <div class="info-group">
+            <label>Specialization</label>
+            <div class="value">{{ profileData.specialization }}</div>
+          </div>
+          <div class="info-group">
+            <label>Experience</label>
+            <div class="value">{{ profileData.experienceYears }} Years</div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary" (click)="toggleEdit()">Update Details</button>
+        </div>
+      </div>
+    }
+
+    @if(isEditing){
+      <div class="edit-content">
+        <form (ngSubmit)="onSubmit()" #doctorForm="ngForm">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" [(ngModel)]="profileData.name" required placeholder="e.g. Dr. Pola Yashasree">
+          </div>
+
+          <div class="form-row">
+            <label for="spec">Specialization</label>
+            <select name="specialization" [(ngModel)]="profileData.specialization" required>
+              <option value="Cardiology">Cardiology</option>
+              <option value="Dermatology">Dermatology</option>
+              <option value="Neurology">Neurology</option>
+              <option value="Pediatrics">Pediatrics</option>
+              <option value="General Physician">General Physician</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="exp">Years of Experience</label>
+            <input type="number" name="experienceYears" [(ngModel)]="profileData.experienceYears" required min="0">
+          </div>
+
+          <div class="form-footer">
+            @if(isEditMode){
+              <button type="button" class="btn btn-ghost" (click)="toggleEdit()">Cancel</button>
+            }
+            <button type="submit" class="btn btn-primary" [disabled]="!doctorForm.valid">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    }
+  </div>
+</div>

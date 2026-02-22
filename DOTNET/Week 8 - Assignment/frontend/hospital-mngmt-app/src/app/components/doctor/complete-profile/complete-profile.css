@@ -1,0 +1,116 @@
+.profile-page {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.card {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.text-primary { 
+  color: #111827; 
+  margin: 0; 
+  font-size: 1.5rem; 
+  font-weight: 700; 
+}
+.text-muted { 
+  color: #6b7280; 
+  margin: 4px 0 0; 
+  font-size: 0.95rem; 
+}
+
+.info-grid {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.info-group .value {
+  font-size: 1.125rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-row { 
+  margin-bottom: 20px; 
+}
+
+.form-row label { 
+  display: block; 
+  margin-bottom: 8px; 
+  font-weight: 500; 
+  color: #374151; 
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus { 
+  outline: none; 
+  border-color: #2563eb; 
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-primary { 
+  background-color: #2563eb; 
+  color: white; 
+}
+.btn-ghost { 
+  background: transparent; 
+  color: #6b7280; 
+}
+
+.btn:disabled { 
+  opacity: 0.5; 
+  cursor: not-allowed; 
+}
+
+.badge-success {
+  background: #ecfdf5;
+  color: #059669;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

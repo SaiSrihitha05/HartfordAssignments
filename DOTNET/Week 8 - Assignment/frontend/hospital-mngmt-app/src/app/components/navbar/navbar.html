@@ -1,0 +1,35 @@
+<nav class="top-nav">
+  <div class="nav-brand">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Hospital System</a>
+  </div>
+  
+
+  <div class="nav-auth">
+    @if(!authService.isLoggedIn()){
+      <ng-container>
+        <a routerLink="/login" class="login-link">Login</a>
+        <a routerLink="/register" class="register-btn">Sign Up</a>
+      </ng-container>
+    }
+    @else{
+      <div class="profile-section">
+        @if(authService.getRole() !== 'Admin'){
+          <a
+            [routerLink]="['/' + authService.getRole()?.toLowerCase(), 'complete-profile']" 
+            class="profile-trigger"
+            title="View Profile">
+            <div class="avatar-circle">
+              {{ authService.getRole()?.[0] }}
+            </div>
+          </a>
+        }
+        @if(authService.getRole() === 'Admin'){
+          <div class="profile-trigger admin-static">
+            <div class="avatar-circle admin-bg">A</div>
+          </div>
+        }
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </div>
+    }
+  </div>
+</nav>

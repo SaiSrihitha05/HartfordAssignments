@@ -1,0 +1,84 @@
+<div class="profile-container">
+  <div class="profile-card">
+    
+    <div class="header-section">
+      <h2 class="title">
+        {{ isEditMode ? 'My Patient Profile' : 'Complete Your Profile' }}
+      </h2>
+      @if(isEditMode){
+        <span class="status-badge">
+          <span class="icon">✓</span> Profile Verified
+        </span>
+      }
+    </div>
+
+    <p class="subtitle">
+      {{ isEditMode 
+         ? 'View or update your medical contact information below.' 
+         : 'Please provide your details to enable appointment booking.' 
+      }}
+    </p>
+    <hr class="divider">
+    <form (ngSubmit)="onSubmit()" #profileForm="ngForm" class="profile-form">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            [(ngModel)]="profileData.name" 
+            required 
+            placeholder="e.g. Pola Yashasree">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input 
+            type="number" 
+            id="age" 
+            name="age" 
+            [(ngModel)]="profileData.age" 
+            required 
+            min="0" 
+            max="120">
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" [(ngModel)]="profileData.gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <div class="input-wrapper">
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            [(ngModel)]="profileData.phone" 
+            required 
+            placeholder="e.g. +91 9876543210">
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button 
+          type="submit" 
+          class="btn-submit" 
+          [disabled]="!profileForm.valid">
+          {{ isEditMode ? 'Update My Information' : 'Finish Setup' }}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

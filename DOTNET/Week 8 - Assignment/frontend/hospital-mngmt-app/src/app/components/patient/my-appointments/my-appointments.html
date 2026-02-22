@@ -1,0 +1,57 @@
+<div class="page-container">
+  <header class="header">
+    <h1 class="text-primary">My Appointments</h1>
+    <p class="text-muted">Stay updated with your scheduled medical visits.</p>
+  </header>
+
+  @if(isLoading){
+    <div class="loader-box">
+        <div class="spinner"></div>
+        <p>Loading your medical schedule...</p>
+    </div>
+  }
+  @if(!isLoading && appointments.length > 0){
+    <div class="appointment-stack">
+        <div class="appointment-card" *ngFor="let appt of appointments">
+        <div class="card-body">
+            <div class="doctor-profile">
+            <div class="doc-avatar">🏥</div>
+            <div class="doc-text">
+                <h3>Dr. {{ appt.doctorName }}</h3>
+                <span class="specialty-tag">{{ appt.specialization }}</span>
+            </div>
+            </div>
+
+            <div class="time-info">
+            <div class="time-block">
+                <span class="small-label">DATE</span>
+                <span class="bold-value">{{ appt.appointmentDate | date: 'mediumDate' }}</span>
+            </div>
+            <div class="time-block">
+                <span class="small-label">TIME</span>
+                <span class="bold-value">{{ appt.appointmentDate | date: 'shortTime' }}</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <span class="status-pill" [ngClass]="appt.status.toLowerCase()">
+            {{ appt.status }}
+            </span>
+            <button *ngIf="appt.status === 'Scheduled'" class="btn-outline-danger">
+            Request Cancellation
+            </button>
+        </div>
+        </div>
+    </div>
+  }
+  @if(!isLoading && appointments.length === 0){
+    <div class="empty-state">
+        <div class="empty-icon">📂</div>
+        <h2>No History Found</h2>
+        <p>You don't have any appointments booked yet.</p>
+        <button routerLink="../book-appointment" class="btn-primary">Find a Doctor</button>
+    </div>
+  }
+  
+</div>
