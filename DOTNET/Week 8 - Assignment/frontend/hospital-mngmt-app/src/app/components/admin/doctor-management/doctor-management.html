@@ -1,0 +1,44 @@
+<div class="admin-container">
+  <div class="admin-card">
+    <div class="admin-header">
+      <h2>Doctor Directory</h2>
+      <p>Oversee medical staff credentials and system access.</p>
+    </div>
+
+    <div class="table-container">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Experience</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for(doc of doctors; track doc.name){
+            <tr>
+              <td class="bold-text">Dr. {{ doc.name }}</td>
+              <td>{{ doc.specialization }}</td>
+              <td>{{ doc.experienceYears }} Years</td>
+              <td>
+                <span class="status-indicator">Active</span>
+              </td>
+              <td>
+                <button class="btn-delete" (click)="removeDoctor(doc.id)">
+                  Remove
+                </button>
+              </td>
+            </tr>
+          }
+          @if(doctors.length === 0 && !isLoading){
+            <tr>
+              <td colspan="5" class="no-data">No doctors found.</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

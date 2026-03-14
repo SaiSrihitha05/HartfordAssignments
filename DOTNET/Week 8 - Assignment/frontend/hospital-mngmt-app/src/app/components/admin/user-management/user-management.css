@@ -1,0 +1,70 @@
+.admin-container {
+  padding: 40px 20px;
+  background-color: #f1f5f9;
+  min-height: 90vh;
+}
+
+.admin-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header {
+  margin-bottom: 30px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  color: #475569;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.role-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.role-badge.admin { 
+  background: #fee2e2; 
+  color: #991b1b; 
+}
+
+.role-badge.doctor { 
+  background: #e0f2fe; 
+  color: #0369a1; 
+}
+
+.role-badge.patient { 
+  background: #dcfce7; 
+  color: #15803d; 
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}

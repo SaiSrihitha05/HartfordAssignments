@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/HospitalManagementSystem/">
+    <Project Path="Application/Application.csproj" Id="f60a0726-2073-4349-9528-3585b142ae3e" />
+    <Project Path="Domain/Domain.csproj" Id="e7c43fa8-786c-4e69-9e4e-597c3aa2b50f" />
+    <Project Path="HospitalApiWithDb/HospitalApiWithDb.csproj" />
+    <Project Path="Infrastructure/Infrastructure.csproj" Id="38df4c89-77e2-4b09-820c-8b886b25b803" />
+  </Folder>
+</Solution>

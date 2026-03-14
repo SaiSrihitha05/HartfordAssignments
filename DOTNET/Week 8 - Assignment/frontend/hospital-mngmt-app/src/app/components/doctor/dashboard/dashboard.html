@@ -1,0 +1,24 @@
+<div class="doctor-layout">
+  <aside class="doctor-sidebar">
+    <div class="sidebar-header">
+      <div class="med-logo">⚕️</div>
+      <h3>Doctor Portal</h3>
+    </div>
+    
+    <nav class="sidebar-nav">
+      <a routerLink="dashboard" routerLinkActive="active" class="nav-item">
+        <span class="icon">🏠</span> Dashboard
+      </a>
+      <a routerLink="my-appointments" routerLinkActive="active" class="nav-item">
+        <span class="icon">📅</span> My Schedule
+      </a>
+      <a routerLink="complete-profile" routerLinkActive="active" class="nav-item">
+        <span class="icon">👤</span> My Profile
+      </a>
+    </nav>
+  </aside>
+
+  <main class="doctor-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>

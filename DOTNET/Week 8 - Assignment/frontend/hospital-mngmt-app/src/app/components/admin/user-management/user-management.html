@@ -1,0 +1,48 @@
+<div class="admin-container">
+  <div class="admin-card">
+    <div class="admin-header">
+      <h2>User Management</h2>
+      <p>View and manage all registered users in the system.</p>
+    </div>
+
+    @if(errorMessage){
+      <div class="error-banner">{{ errorMessage }}</div>
+    }
+
+    <div class="table-container">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Email Address</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for(user of users;track user.id){
+            <tr>
+              <td>#{{ user.id }}</td>
+              <td>{{ user.email }}</td>
+              <td>
+                <span class="role-badge" [ngClass]="user.role.toLowerCase()">
+                  {{ user.role }}
+                </span>
+              </td>
+              <td>
+                <button class="btn-delete" (click)="deleteUser(user.id)">
+                  Delete
+                </button>
+              </td>
+            </tr>
+          }
+          @if(users.length===0){
+            <tr>
+              <td colspan="4" class="no-data">No users found in the database.</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

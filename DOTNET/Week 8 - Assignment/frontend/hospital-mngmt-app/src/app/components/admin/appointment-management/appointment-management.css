@@ -1,0 +1,60 @@
+.admin-container { 
+  padding: 30px; 
+  background: #f8fafc; 
+}
+.admin-card { 
+  background: white; 
+  padding: 25px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+.admin-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 20px; 
+}
+.admin-table th { 
+  text-align: left; 
+  padding: 12px; 
+  background: #f1f5f9; 
+  color: #475569; 
+}
+.admin-table td { 
+  padding: 15px; 
+  border-bottom: 1px solid #f1f5f9; 
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.status-badge.scheduled { 
+  background: #e0f2fe; 
+  color: #0369a1; 
+}
+.status-badge.completed { 
+  background: #dcfce7; 
+  color: #166534; 
+}
+.status-badge.cancelled { 
+  background: #fee2e2; 
+  color: #991b1b; 
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-cancel:hover { 
+  background: #ef4444; 
+  color: white; 
+}

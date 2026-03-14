@@ -1,0 +1,146 @@
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-primary { 
+    color: #0f172a; 
+    font-size: 2rem; 
+    font-weight: 800; 
+    margin: 0; 
+}
+
+.text-muted { 
+    color: #64748b; 
+    font-size: 1rem; 
+    margin-top: 5px; 
+}
+
+.appointment-stack {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.appointment-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.doctor-profile { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.doc-avatar {
+  font-size: 2rem;
+  background: #f1f5f9;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.doc-text h3 { 
+    margin: 0; 
+    font-size: 1.1rem; 
+    color: #1e293b; 
+}
+
+.specialty-tag { 
+    font-size: 0.8rem; 
+    color: #3b82f6; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+}
+
+.time-info { 
+    display: flex; 
+    gap: 40px; 
+}
+
+.time-block { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+}
+
+.small-label { 
+    font-size: 0.7rem; 
+    font-weight: 700; 
+    color: #94a3b8; 
+    letter-spacing: 0.05em; 
+}
+
+.bold-value { 
+    color: #334155; 
+    font-weight: 600; 
+    font-size: 1rem; 
+}
+
+.card-footer {
+  background: #f8fafc;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.status-pill {
+  padding: 5px 14px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scheduled { 
+    background: #dbeafe; 
+    color: #1e40af; 
+}
+
+.completed { 
+    background: #dcfce7; 
+    color: #15803d; 
+}
+
+.cancelled { 
+    background: #fee2e2; 
+    color: #991b1b; 
+}
+
+.btn-outline-danger {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline-danger:hover { 
+    color: #ef4444; 
+}

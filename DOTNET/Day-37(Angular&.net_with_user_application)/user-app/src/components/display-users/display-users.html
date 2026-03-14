@@ -1,0 +1,30 @@
+<div class="table-container">
+  <h2>User List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email Id</th>
+        <th>DOB</th>
+        <th>Address</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        
+      @for(user of users;track user.userId){
+        <tr>
+            <td>{{ user.userId }}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.emailId}}</td>
+            <td>{{ user.dateOfBirth | date }}</td>
+            <td>{{ user.address }}</td>
+            <td>{{ user.age}}</td>
+        </tr>
+    }
+    </tbody>
+  </table>
+</div>

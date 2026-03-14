@@ -1,0 +1,15 @@
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\bin\Debug\net8.0\Requirement1.exe
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\bin\Debug\net8.0\Requirement1.deps.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\bin\Debug\net8.0\Requirement1.runtimeconfig.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\bin\Debug\net8.0\Requirement1.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\bin\Debug\net8.0\Requirement1.pdb
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.GeneratedMSBuildEditorConfig.editorconfig
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.AssemblyInfoInputs.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.AssemblyInfo.cs
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.csproj.CoreCompileInputs.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.sourcelink.json
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\refint\Requirement1.dll
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.pdb
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\Requirement1.genruntimeconfig.cache
+D:\angularpractice\HartfordAssignments\c#\ParkingLot\Requirement1\obj\Debug\net8.0\ref\Requirement1.dll

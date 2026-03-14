@@ -1,0 +1,26 @@
+<div class="form-container">
+  <h2>Add User</h2>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <label>Username</label>
+    <input type="text"
+           [(ngModel)]="user.username"
+           name="username"
+           required>
+    <label>Email</label>
+    <input type="email"
+           [(ngModel)]="user.emailId"
+           name="emailId"
+           required>
+    <label>Date of Birth</label>
+    <input type="date"
+           [(ngModel)]="user.dateOfBirth"
+           name="dateOfBirth"
+           required>
+    <label>Address</label>
+    <textarea [(ngModel)]="user.address"
+              name="address"
+              required></textarea>
+    <button type="submit">Add User</button>
+  </form>
+</div>

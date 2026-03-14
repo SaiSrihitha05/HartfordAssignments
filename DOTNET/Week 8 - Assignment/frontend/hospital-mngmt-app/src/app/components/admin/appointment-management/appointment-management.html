@@ -1,0 +1,43 @@
+<div class="admin-container">
+  <div class="admin-card">
+    <div class="admin-header">
+      <h2>Global Appointment Schedule</h2>
+      <p>Tracking all medical consultations across the hospital.</p>
+    </div>
+
+    <div class="table-container">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date & Time</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (appt of allAppointments; track appt.id) {
+          <tr>
+            <td>#{{ appt.id }}</td>
+            <td>{{ appt.patientName }}</td>
+            <td>Dr. {{ appt.doctorName }}</td>
+            <td>{{ appt.appointmentDate | date: 'MMM d, y, h:mm a' }}</td>
+            <td>
+              <span class="status-badge" [ngClass]="appt.status.toLowerCase()">
+                {{ appt.status }}
+              </span>
+            </td>
+            <td>
+              @if (appt.status !== 'Cancelled') {
+              <button class="btn-cancel" (click)="cancelAppointment(appt.id)">Cancel</button>
+              }
+            </td>
+          </tr>
+        }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
