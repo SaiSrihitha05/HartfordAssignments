@@ -1,0 +1,12 @@
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.AssemblyInfoInputs.cache
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.AssemblyInfo.cs
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.csproj.CoreCompileInputs.cache
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.sourcelink.json
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\bin\Debug\net8.0\Notice.Domain.deps.json
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\bin\Debug\net8.0\Notice.Domain.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\bin\Debug\net8.0\Notice.Domain.pdb
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\refint\Notice.Domain.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\Notice.Domain.pdb
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Domain\obj\Debug\net8.0\ref\Notice.Domain.dll

@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\models\\complaintcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\models\\complaintcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\dtos\\updatecomplaintdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\dtos\\updatecomplaintdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\controllers\\complaintscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\controllers\\complaintscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\dtos\\complaintresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\dtos\\complaintresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\dtos\\createcomplaintdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\dtos\\createcomplaintdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|d:\\angularpractice\\hartfordassignments\\c#\\complaintsolution\\complaintsapi\\complaintsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1630A3E4-6909-4268-9307-49BFC0F36A9B}|ComplaintsAPI\\ComplaintsAPI.csproj|solutionrelative:complaintsapi\\complaintsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateComplaintDto.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\UpdateComplaintDto.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\DTOs\\UpdateComplaintDto.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\UpdateComplaintDto.cs",
+              "RelativeToolTip": "ComplaintsAPI\\DTOs\\UpdateComplaintDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:05:05.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComplaintsController.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Controllers\\ComplaintsController.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\Controllers\\ComplaintsController.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Controllers\\ComplaintsController.cs",
+              "RelativeToolTip": "ComplaintsAPI\\Controllers\\ComplaintsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwGcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:10:32.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\Program.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Program.cs",
+              "RelativeToolTip": "ComplaintsAPI\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:04:00.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComplaintContext.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Models\\ComplaintContext.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\Models\\ComplaintContext.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Models\\ComplaintContext.cs",
+              "RelativeToolTip": "ComplaintsAPI\\Models\\ComplaintContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:03:01.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Complaint.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Models\\Complaint.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\Models\\Complaint.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\Models\\Complaint.cs",
+              "RelativeToolTip": "ComplaintsAPI\\Models\\Complaint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:01:56.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComplaintResponseDto.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\ComplaintResponseDto.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\DTOs\\ComplaintResponseDto.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\ComplaintResponseDto.cs",
+              "RelativeToolTip": "ComplaintsAPI\\DTOs\\ComplaintResponseDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:05:29.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateComplaintDto.cs",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\CreateComplaintDto.cs",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\DTOs\\CreateComplaintDto.cs",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\DTOs\\CreateComplaintDto.cs",
+              "RelativeToolTip": "ComplaintsAPI\\DTOs\\CreateComplaintDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T17:04:35.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComplaintsApi.csproj",
+              "DocumentMoniker": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\ComplaintsApi.csproj",
+              "RelativeDocumentMoniker": "ComplaintsAPI\\ComplaintsApi.csproj",
+              "ToolTip": "D:\\angularpractice\\HartfordAssignments\\c#\\ComplaintSolution\\ComplaintsAPI\\ComplaintsApi.csproj",
+              "RelativeToolTip": "ComplaintsAPI\\ComplaintsApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-15T16:59:26.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

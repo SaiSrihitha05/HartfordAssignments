@@ -1,0 +1,16 @@
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\bin\Debug\net8.0\Notice.Application.deps.json
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\bin\Debug\net8.0\Notice.Application.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\bin\Debug\net8.0\Notice.Application.pdb
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\bin\Debug\net8.0\Notice.Domain.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\bin\Debug\net8.0\Notice.Domain.pdb
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.csproj.AssemblyReference.cache
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.AssemblyInfoInputs.cache
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.AssemblyInfo.cs
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.csproj.CoreCompileInputs.cache
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.sourcelink.json
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.A.615CB273.Up2Date
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\refint\Notice.Application.dll
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\Notice.Application.pdb
+D:\angularpractice\HartfordAssignments\CommunityLink\CommunityHub.Microservices\Notice.Service\Notice.Application\obj\Debug\net8.0\ref\Notice.Application.dll
